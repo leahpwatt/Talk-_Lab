@@ -1,0 +1,20 @@
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+
+.fontSize {
+	font-size: 3em;
+}
+
+.background {
+	background-color: yellow;
+}
+
+.fontDec {
+	font-family: cursive, "Times New Roman";
+	font-style: underline;
+}

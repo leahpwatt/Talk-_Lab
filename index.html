@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div ng-controller="MyController">
+		<button ng-click="addWord()">Add a Word</button>
+		<button ng-click="addPhrase()">Add a Phrase</button>
+		<button ng-click="addClass()">Add Decorative Words</button>
+		<button ng-click="addPhraseClass()">Add Decorative Phrases</button>
+		<button ng-click="addAllClass()">Do it up!</button>
+
+		<ul>
+			<li ng-class="[item.style1, item.style2];" ng-repeat="item in arr track by $index">{{item.text}}</li>
+		</ul>
+	</div>
+	<script src="angular.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
